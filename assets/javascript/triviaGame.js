@@ -96,7 +96,7 @@ function displayResult(){
     <p>You got ${score} question(s) right</p>
     <p>And you missed ${losses} question(s)</p>
     <p>out of ${quizQuestions.length} total questions!</p>
-    <button>Reset Game</button>
+    <button id="reset">Reset Game</button>
     `;
     $("#game").html(result);
 }
@@ -110,5 +110,11 @@ $(document).on("click", "#reset", function(){
 
     loadQuestion();
 });;
+
+// Remaining things to do: 
+// Add functionality to Start Game Button, 
+// Add a counter for how many questions the user has left, 
+// Add more css styling and better questions to make this cool.
+
 
 loadQuestion();
